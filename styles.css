@@ -1,0 +1,106 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    height: 1.5rem;
+    font-size: 0.75rem;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: grid;
+    grid: auto / repeat(3, 1fr);
+}
+
+.newArrayButton {
+    background-color: coral;
+}
+
+.newArrayButton:hover {
+    background-color: rgb(205, 76, 30);
+}
+
+.algorithmsButton {
+    background-color: rgb(1, 204, 167);
+}
+
+.algorithmsButton:hover{
+    background-color: rgb(1, 172, 140);
+}
+
+.runButton {
+    background-color: rgb(174, 0, 255);
+}
+
+.runButton:hover{
+    background-color: rgb(136, 2, 199);
+}
+
+.algorithmOptions {
+    width: 100%;
+    display: grid;
+}
+
+.algorithmOptions > button {
+    background-color: rgb(171, 171, 171);
+}
+
+.algorithmOptions > button:hover {
+    background-color: rgb(144, 144, 144);
+}
+
+.algorithmVisualizer {
+    margin-top: 1rem;
+    width: 100%;
+    height:80%;
+    display: grid;
+    border-bottom: 1px solid black;
+    column-gap: 0.25rem;
+    align-items: end;
+}
+
+.bar {
+    background-color: rgb(0, 136, 255);
+    width: 100%;
+}
+
+.closed::after {
+    content: '▼';
+}
+
+.open::after {
+    content: '▲';
+}
+
+.hide {
+    display: none;
+}
+
+.current {
+    background-color: rgb(255, 0, 0);
+}
+
+@media only screen and (min-width: 600px){
+    button {
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .algorithmVisualizer {
+        margin-top: 0.25rem;
+    }
+}
